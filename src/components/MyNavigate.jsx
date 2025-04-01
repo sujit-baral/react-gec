@@ -3,14 +3,17 @@ import { useNavigate } from "react-router-dom";
 
 const MyNavigate = () => {
   let navigate = useNavigate();
-  let isLoggedIn = true;
-  useEffect(() => {
-    if (isLoggedIn) {
-      navigate("/about");
-    }
-  });
+  let naviGate = () => {
+    navigate('/about')
+  }
 
-  return <></>;
+  return (
+    <>
+      <br />
+      <br />
+      <button onClick={naviGate}>Home page</button>
+    </>
+  );
 };
 
 export default MyNavigate;

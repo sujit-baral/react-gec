@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 
-const color = React.createContext("yellow");
+const color = React.createContext("blue");
 
 function MyContext() {
 
@@ -8,7 +8,7 @@ function MyContext() {
 
   return (
     <>
-        <h4 style={{color: theme}}>Hello Everyone</h4>
+        <h1 style={{color: theme}}>Hello Everyone</h1>
     </>
   )
 }
